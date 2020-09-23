@@ -3,19 +3,18 @@ package a_parsing.b_lexer;
 public class ListLexer  extends Lexer{
 
     public static int NAME = 2;  /*name*/
-    public static int COMMA = 3; /*;*/
+    public static int COMMA = 3; /*,*/
     public static int LBRACK = 4; /*[*/
     public static int RBRACK = 5; /*]*/
 
-    public static String[] tokenNames =
-            {
-                    "n/a",
-                    "<EOF>",
-                    "NAME",
-                    "COMMA",
-                    "LBRACK",
-                    "RBRACK",
-            };
+    public static String[] tokenNames ={
+            "n/a",
+            "<EOF>",
+            "NAME",
+            "COMMA",
+            "LBRACK",
+            "RBRACK",
+    };
 
     public ListLexer(String input) {
         super(input);
