@@ -1,5 +1,7 @@
 package a_parsing.d_multi;
 
+import java.util.Arrays;
+
 public class Parser {
     Lexer input;
     /*已匹配的Token数组*/
@@ -24,6 +26,7 @@ public class Parser {
     public void consume() {
         lookahead[p] = input.nextToken();
         p = (p + 1) % k;
+
     }
 
     /**
